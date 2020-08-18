@@ -1,0 +1,99 @@
+<div class="container pt-3">
+  <div class="row border border-dark px-2 pt-5">
+    <div class="col-md-12">
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>producto:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.nombre }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Cantidad:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.cantidad }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Licencia de Conducir:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.Licencia }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Lugar Origen:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.lugar }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Lugar Destino:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.destino }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Nombre Chofer:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.chofer }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Unidad:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.unidad }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <p><strong>Placa:</strong></p>
+            </div>
+            <div class="col-md-6">
+              <p>{{ producto.placa }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12 text-right">
+      <button class="btn btn-secondary" (click)="regresar()">Regresar</button>
+    </div>
+  </div>
+</div>

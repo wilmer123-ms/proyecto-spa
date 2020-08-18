@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form action="">
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="">Nombre producto:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nombre"
+              [(ngModel)]="nombre"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="">Precio</label>
+            <input
+              type="text"
+              class="form-control"
+              name="precio"
+              [(ngModel)]="precio"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">Provincia</label>
+            <input
+              type="text"
+              class="form-control"
+              name="provincia"
+              [(ngModel)]="provincia"
+            />
+          </div>
+        </div>
+        <div class="row pt-1">
+          <div class="col-md-12">
+            <button
+              class="btn btn-outline-primary btn-block"
+              (click)="agregarProducto()"
+            >
+              Agregar producto
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Provincia</th>
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of producto; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ data.nombre }}</td>
+            <td>{{ data.precio }}</td>
+            <td>{{ data.provincia }}</td>
+            <td>
+              <button class="btb btn-outline-danger" (click)="eliminar(i)">
+                Elimninar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12 text-right pb-2">
+      <button
+        class="btn btn-success"
+        [disabled]="!selectItem.id"
+        (click)="verCompras()"
+      >
+        Ver Compras
+      </button>
+    </div>
+    <div class="col-md-12">
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Provincia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            *ngFor="let data of productos; let i = index"
+            (click)="fnSelectItem(data)"
+            [class.highlighted]="data.id == selectItem.id"
+          >
+            <td>{{ i + 1 }}</td>
+            <td>{{ data.nombre }}</td>
+            <td>{{ data.precio }}</td>
+            <td>{{ data.provincia }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

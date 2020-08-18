@@ -1,0 +1,29 @@
+<h1>
+  {{ heroe.nombre | uppercase }} <small>{{ heroe.aparicion | date: 'dd-MM-yyy' }}</small>
+</h1>
+<hr />
+
+<div class="row">
+  <div class="col-md-4">
+    <img [src]="heroe.img" class="img-fluid" />
+    <br /><br />
+    <button class="btn btn-outline-danger btn-block" (click)="regresar()">
+      Regresar...
+    </button>
+  </div>
+  <div class="col-md-8">
+    <h3>{{ heroe.nombre }}</h3>
+    <hr />
+    <p>
+      {{ heroe.bio }}
+    </p>
+    <div class="row d-flex justify-content-center pt-5">
+      <div *ngIf="heroe.casa == 'DC'" class="col-md-4 bg-warning">
+        <h1 class="display-1 text-center">{{ heroe.casa }}</h1>
+      </div>
+      <div *ngIf="heroe.casa == 'Marvel'" class="col-md-4 bg-danger">
+        <h1 class="display-3 text-center py-3">{{ heroe.casa }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
