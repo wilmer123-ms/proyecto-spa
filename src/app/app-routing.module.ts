@@ -7,10 +7,12 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { PublicidadComponent } from './components/publicidad/publicidad.component';
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
+  {path: 'publicidad', component: PublicidadComponent},
   {path: 'about', component: AboutComponent},
   {path: 'clientes', component: ClientesComponent},
   {path: 'heroes', component: HeroesComponent},

@@ -14,6 +14,7 @@ import { BuscadorComponent } from "./components/buscador/buscador.component";
 import { ProductoComponent } from './components/producto/producto.component';
 import { ProductosService } from './servicios/productos.service';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { PublicidadComponent } from './components/publicidad/publicidad.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ClientesComponent } from './components/clientes/clientes.component';
     BuscadorComponent,
     ProductoComponent,
     ClientesComponent,
+    PublicidadComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [HeroesService, ProductosService],
