@@ -9,6 +9,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { LoginComponent } from './components/login/login.component';
+import { PruebaComponent } from './components/prueba/prueba.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'clientes', component: ClientesComponent},
   {path: 'login', component: LoginComponent},
+  {path: 'prueba', component: PruebaComponent},
   {path: 'heroes', component: HeroesComponent},
   {path: 'heroe/:id', component: HeroeComponent},
   {path: 'buscar/:termino', component: BuscadorComponent},

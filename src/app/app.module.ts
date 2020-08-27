@@ -16,6 +16,7 @@ import { ProductosService } from './servicios/productos.service';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { LoginComponent } from './components/login/login.component';
+import { PruebaComponent } from './components/prueba/prueba.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { LoginComponent } from './components/login/login.component';
     ClientesComponent,
     PublicidadComponent,
     LoginComponent,
+    PruebaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [HeroesService, ProductosService],
